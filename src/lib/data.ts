@@ -14,8 +14,8 @@ export const navItems = [
 export const profile = {
   name: "陈树",
   title: "AI系统设计型产品经理",
-  tagline: "设计可控的AI决策系统，而非依赖LLM黑盒",
-  bio: "具备 AI 产品全流程能力的产品经理，兼具 Agent 工程落地经验。擅长从数据采集→归因分析→Prompt 优化→A/B 验证构建数据飞轮闭环。独立完成过 LangGraph 多节点 Agent 架构设计、MCP 插件化服务编排、V/T/O 客户三维评分模型等从 0 到 1 的 AI 产品落地。",
+  tagline: "设计并落地AI系统，不是调API",
+  bio: "从0到1落地3个不同类型的AI系统：即时探需系统（客户画像驱动差异化回复）、售后插件化架构（MCP多能力编排）、跟进策略推荐系统（可控决策引擎）。擅长将业务建模→Agent架构设计→A/B验证构建为可迭代的闭环，而非一次性交付。",
   email: "980499184@qq.com",
   phone: "(+86) 17376580885",
 };
