@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prebuild": "npx tsx scripts/build-wiki-index.ts",
     "build-index": "npx tsx scripts/build-wiki-index.ts"
   },
   "dependencies": {
