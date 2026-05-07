@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# llm_wiki local artifacts
+self_knowledgev1/raw/
+self_knowledgev1/.llm-wiki/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

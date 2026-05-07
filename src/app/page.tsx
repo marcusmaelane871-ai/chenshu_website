@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import CapabilityCard from "@/components/capability-card";
 import ProjectPreview from "@/components/project-preview";
 import TrustBar from "@/components/trust-bar";
+import ChatWidget from "@/components/chat/chat-widget";
 import { capabilities, projects } from "@/lib/data";
 
 export default function Home() {
@@ -64,6 +65,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ChatWidget />
     </>
   );
 }
