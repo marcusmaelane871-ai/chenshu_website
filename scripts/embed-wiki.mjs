@@ -72,8 +72,8 @@ async function main() {
   console.log(`DashScope API key found (${apiKey.slice(0, 8)}...)`)
 
   if (!fs.existsSync(INDEX_PATH)) {
-    console.error("wiki-index.json not found. Run build-index first.")
-    process.exit(1)
+    console.log("wiki-index.json not found — skipping embedding (likely a Vercel deployment)")
+    process.exit(0)
   }
 
   const index = JSON.parse(fs.readFileSync(INDEX_PATH, "utf-8"))

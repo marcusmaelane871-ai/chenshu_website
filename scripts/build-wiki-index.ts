@@ -219,8 +219,8 @@ function main() {
   fs.mkdirSync(outputDir, { recursive: true })
 
   if (!fs.existsSync(wikiDir)) {
-    console.error(`Wiki directory not found: ${wikiDir}`)
-    process.exit(1)
+    console.log(`Wiki directory not found: ${wikiDir} — skipping index build (likely a Vercel deployment)`)
+    return
   }
 
   const mdFiles = collectMdFiles(wikiDir)

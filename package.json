@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/embed-wiki.mjs && next build",
+    "build": "npx tsx scripts/build-wiki-index.ts && node scripts/embed-wiki.mjs && next build",
     "start": "next start",
     "lint": "eslint",
     "build-index": "npx tsx scripts/build-wiki-index.ts"
