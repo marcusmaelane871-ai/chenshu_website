@@ -34,6 +34,23 @@ export interface SearchResult {
   score: number
 }
 
+/** Vector search result from embedding similarity. */
+export interface VectorSearchResult {
+  id: string
+  similarity: number
+}
+
+/** RRF-fused search result combining token + vector signals. */
+export interface FusedSearchResult {
+  id: string
+  title: string
+  snippet: string
+  titleMatch: boolean
+  rrfScore: number
+  tokenRank?: number
+  vectorRank?: number
+}
+
 /** Chat message shape for the API. */
 export interface ChatMessage {
   role: "user" | "assistant"

@@ -43,3 +43,5 @@ self_knowledgev1/.llm-wiki/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+data/
+self_knowledgev1/
