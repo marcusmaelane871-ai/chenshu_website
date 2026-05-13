@@ -59,6 +59,19 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
       )}
 
+      {/* Case study link */}
+      {project.slug === "ai-followup-strategy" && (
+        <div className="px-6 py-4 border-t border-[#e2e8f0]">
+          <a
+            href="/sales-agent-case.html"
+            target="_blank"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#2563eb] hover:text-[#1d4ed8] transition-colors"
+          >
+            查看产品案例演示 →
+          </a>
+        </div>
+      )}
+
       {/* Results */}
       <div className="px-6 py-5 bg-[#f8fafc] border-t border-[#e2e8f0]">
         <h4 className="text-base font-semibold text-[#1e3a5f] mb-3">
